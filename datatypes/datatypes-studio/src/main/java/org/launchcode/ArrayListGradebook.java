@@ -3,7 +3,9 @@ package org.launchcode;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+@SuppressWarnings("SpellCheckingInspection")
 public class ArrayListGradebook {
+
     public static void main(String[] args) {
         ArrayList<String> students = new ArrayList<>();
         ArrayList<Double> grades = new ArrayList<>();
@@ -16,11 +18,11 @@ public class ArrayListGradebook {
         do {
             newStudent = input.nextLine();
 
-            if (!newStudent.equals("")) {
+            if (!newStudent.isEmpty()) {
                 students.add(newStudent);
             }
 
-        } while(!newStudent.equals(""));
+        } while(!newStudent.isEmpty());
 
         // Get student grades
         for (String student : students) {

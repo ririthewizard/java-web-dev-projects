@@ -17,10 +17,8 @@ public class countingCharacters {
 
 
         for (char letter : charactersInQuote){
-            if () {
-                int count = countingCharacters.containsKey(letter) ? countingCharacters.get(letter) : 0;
-                countingCharacters.put(letter, count + 1);
-            }
+            int count = countingCharacters.containsKey(letter) ? countingCharacters.get(letter) : 0;
+            countingCharacters.put(letter, count + 1);
         }
 
         for (Map.Entry<Character, Integer> character : countingCharacters.entrySet()) {
